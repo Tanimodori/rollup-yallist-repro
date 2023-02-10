@@ -12,5 +12,9 @@
     "reproduction"
   ],
   "author": "Tanimodori",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "rollup": "^3.15.0",
+    "yallist": "^4.0.0"
+  }
 }
