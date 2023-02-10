@@ -1,17 +1,18 @@
-import { rollup } from "rollup";
+const { rollup } = require("rollup");
 
-const bundle = await rollup({
-  input: {
-    index: "src/index.js",
-  },
-});
+(async () => {
+  const bundle = await rollup({
+    input: {
+      index: "src/index.js",
+    },
+  });
 
-await bundle.generate({
-  output: {
+  await bundle.generate({
+    format: "cjs",
     exports: "named",
     preserveModules: true,
     entryFileNames: (info) => `${info.name}.cjs`,
-  },
-});
+  });
 
-await bundle?.close();
+  await bundle?.close();
+})();
