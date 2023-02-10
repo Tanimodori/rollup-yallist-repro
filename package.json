@@ -4,7 +4,7 @@
   "description": "Reproduction of rollup issue with yallist",
   "main": "index.js",
   "scripts": {
-    "test": "node ./build.js"
+    "test": "rollup --config rollup.config.js"
   },
   "keywords": [
     "rollup",
