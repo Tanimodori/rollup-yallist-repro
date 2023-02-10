@@ -1,3 +1,3 @@
-import yallist from "yallist";
+import * as itor from "yallist/iterator";
 
-console.log(yallist);
+console.log(itor);
