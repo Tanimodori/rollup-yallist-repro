@@ -1,0 +1,16 @@
+{
+  "name": "rollup-yallist-repro",
+  "version": "0.1.0",
+  "description": "Reproduction of rollup issue with yallist",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rollup",
+    "yallist",
+    "reproduction"
+  ],
+  "author": "Tanimodori",
+  "license": "MIT"
+}
