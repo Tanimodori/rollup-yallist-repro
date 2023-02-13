@@ -4,7 +4,7 @@
   "description": "Reproduction of rollup issue with yallist",
   "main": "index.js",
   "scripts": {
-    "test": "rollup --config rollup.config.js"
+    "build": "rollup --config rollup.config.js"
   },
   "keywords": [
     "rollup",
@@ -14,8 +14,11 @@
   "author": "Tanimodori",
   "license": "MIT",
   "dependencies": {
+    "electron-updater": "^5.3.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1",
-    "electron-updater": "^5.3.0",
     "rollup": "^3.15.0"
   }
 }
