@@ -1,4 +1,5 @@
-const { nodeResolve } = require("@rollup/plugin-node-resolve");
+const resolve = require("@rollup/plugin-node-resolve");
+const commonjs = require("@rollup/plugin-commonjs");
 
 module.exports = {
   input: "src/index.js",
@@ -9,5 +10,5 @@ module.exports = {
     preserveModules: true,
     entryFileNames: (info) => `${info.name}.cjs`,
   },
-  plugins: [nodeResolve()],
+  plugins: [resolve(), commonjs()],
 };
